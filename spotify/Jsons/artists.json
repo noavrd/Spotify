@@ -27,7 +27,7 @@
         "id":205,
         "name": "Drake",
         "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/drake.jpg",
-        "albums-list": ["Nothing Was The Same "],
+        "albums-list": ["Nothing Was The Same"],
         "selected-songs": ["Hold on, we`re going home"]
     }
 ]
