@@ -1,0 +1,45 @@
+[
+    {
+        "id": 301,
+        "artist-name": "Eminem",
+        "album-name": "Curtain Call - The Hits (Deluxe Version)",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/curtiancalls.PNG",
+        "songs-list": ["Lose yourself"]
+    }, {
+        "id": 302,
+        "artist-name": "Eminem",
+        "album-name": "The Marshall Mathers LP2",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/marshell2.PNG",
+        "songs-list": ["Rap God"]
+    }, {
+        "id": 303,
+        "artist-name": "Ariana Grange",
+        "album-name": "thank u, next",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/thanku.PNG",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 304,
+        "artist-name": "Beyonce",
+        "album-name": "Dangerously In Love",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/dangerously.PNG",
+        "songs-list": ["Crazy in love"]
+    }, {
+        "id": 305,
+        "artist-name": "Beyonce",
+        "album-name": "Lemonade",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/lemonade.PNG",
+        "songs-list": ["Sorry"]
+    }, {
+        "id": 306,
+        "artist-name": "Milky Chance",
+        "album-name": "Blossom",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/blossom.PNG",
+        "songs-list": ["Cocoon"]
+    }, {
+        "id": 307,
+        "artist-name": "Drake",
+        "album-name": "Nothing Was The Same",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/nothingwasthesame.PNG",
+        "songs-list": ["Hold on, we`re going home"]
+    }
+]

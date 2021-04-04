@@ -1,61 +1,60 @@
 [
-    {
-        "id": 101,
+    {"id": 101,
         "name": "Training",
         "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
+        "created_at": "5-11-2011",
+        "songs-List": ["Blue"]
     }, {
         "id": 102,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
+        "name": "My Shazam Tracks",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/shazam.jpeg",
+        "created_at": "9-4-2015",
+        "songs-List": ["Taro"]
     }, {
         "id": 103,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
+        "name": "classics",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/classic.jpeg",
+        "created_at": "4-12-1997",
+        "songs-List": ["Daddy Cool"]
     }, {
         "id": 104,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
+        "name": "sad mood",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/sadmode.jpeg",
+        "created_at": "3-3-2013",
+        "songs-List": ["Back To Black"]
     }, {
         "id": 105,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
+        "name": "driving",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/drive.jpeg",
+        "created_at": "30-3-2020",
+        "songs-List": ["Location"]
     }, {
         "id": 106,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
+        "name": "motivation",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/motivation.jpeg",
+        "created_at": "1-8-2021",
+        "songs-List": ["Good Vibrations"]
     }, {
         "id": 107,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
+        "name": "Isreali Songs",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/israeli.jpeg",
+        "created_at": "20-4-2006",
+        "songs-List": ["Hu Heemin La"]
     }, {
         "id": 108,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
+        "name": "Happy mood",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/happy.jpeg",
+        "created_at": "5-5-2005",
+        "songs-List": ["I Trusted You"]
     }, {
         "id": 109,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
+        "name": "broken heart",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/brokenheart.jpeg",
+        "created_at": "06-05-2020",
+        "songs-List": ["Someone Like You"]
     }, {
         "id": 110,
-        "name": "Today`s hits",
+        "name": "Today's hits",
         "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/todayhits.png",
         "created_at":"04-04-2021",
         "songs-list": ["Fever"]
@@ -70,13 +69,13 @@
         "name": "00's Essentials",
         "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/00s.PNG",
         "created_at":"15-12-2020",
-        "songs-list": ["Let`s get it started"]
+        "songs-list": ["Let's get it started"]
     }, {
         "id": 113,
         "name": "RAP LIFE",
         "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/raplife.PNG",
         "created_at":"",
-        "songs-list": ["Bitch, don`t kill my vibe", "No Role Modelz"]
+        "songs-list": ["Bitch, don't kill my vibe", "No Role Modelz"]
     }, {
         "id": 114,
         "name": "British Rock",
@@ -101,17 +100,5 @@
         "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/quiet.PNG",
         "created_at":"13-01-2021",
         "songs-list": ["Pretty little fears"]
-    }, {
-        "id": 118,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
-    }, {
-        "id": 119,
-        "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
-        "created_at":"",
-        "songs-list": ["Break up with your girlfriend, i'm board"]
-    }, 
+    }
 ]

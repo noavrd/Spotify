@@ -19,8 +19,8 @@
         "src" : "https://www.youtube.com/embed/ygTZZpVkmKg"
     }, {
         "id": 4,
-        "artist-name": "Over now",
-        "song-name": "Post Malone",
+        "artist-name": "Post Malone",
+        "song-name": "Over now",
         "views": 140020,
         "src" : "https://www.youtube.com/embed/vFPoHUIRpvg"
     }, {
@@ -44,13 +44,13 @@
     }, {
         "id": 8,
         "artist-name": "Kendrick Lamar",
-        "song-name": "Bitch, don`t kill my vibe",
+        "song-name": "Bitch, don't kill my vibe",
         "views": 175582,
         "src": "https://www.youtube.com/embed/GF8aaTu2kg0"
     }, {
         "id": 9,
-        "artist-name": "The black eyed peas",
-        "song-name": "Let`s get it started",
+        "artist-name": "Black eyed peas",
+        "song-name": "Let's get it started",
         "views": 140002,
         "src": "https://www.youtube.com/embed/IKqV7DB8Iwg"
     }, {
@@ -86,7 +86,7 @@
     }, {
         "id": 15,
         "artist-name": "Drake",
-        "song-name": "Hold on, we`re going home",
+        "song-name": "Hold on, we're going home",
         "views": 9522541,
         "src": "https://www.youtube.com/embed/QKYkZnxZ3ZA"
     }, {
@@ -119,5 +119,132 @@
         "song-name": "Set Fire to the Rain",
         "views": 951823,
         "src": "https://www.youtube.com/embed/Ri7-vnrJD3k"
-    }
+    }, {
+        "id": 21,
+        "artist-name": "Khalid",
+        "song-name":"Location",
+        "views":200,
+        "src": "https://www.youtube.com/embed/by3yRdlQvzs" 
+        
+    }, {
+        "id": 22,
+        "artist-name": "Aaron Tylor",
+        "song-name":"Blue",
+        "views":10000,
+        "src": "https://www.youtube.com/embed/kWIzGEZX6Mo"
+    }, {
+        "id": 23,
+        "artist-name": "Adele",
+        "song-name":"Someone Like You",
+        "views":36400,
+        "src": "https://www.youtube.com/embed/hLQl3WQQoQ0"
+    }, {
+        "id": 24,
+        "artist-name": "Alice Merton",
+        "song-name":"No Roots",
+        "views":89000,
+        "src": "https://www.youtube.com/embed/PUdyuKaGQd4"
+    }, {
+        "id": 25,
+        "artist-name": "alt-J",
+        "song-name":"Taro",
+        "views":71379,
+        "src": "https://www.youtube.com/embed/S3fTw_D3l10"
+    }, {
+        "id": 26,
+        "artist-name": "Amy Winehouse",
+        "song-name":"Back To Black",
+        "views":20999999,
+        "src": "https://www.youtube.com/embed/TJAfLE39ZZ8"
+    }, {
+        "id": 27,
+        "artist-name": "Anderson .Paak",
+        "song-name":"Put Me Thru",
+        "views":23456789,
+        "src": "https://www.youtube.com/embed/pK2-XuLByuQ"
+    }, {
+        "id": 28,
+        "artist-name": "Asaf Avidan",
+        "song-name":"Different Pulses",
+        "views":909090,
+        "src": "https://www.youtube.com/embed/wHyplEnrgQQ"
+    }, {
+        "id": 29,
+        "artist-name": "Backstreet Boys",
+        "song-name":"I Trusted You",
+        "views":56231,
+        "src":"https://www.youtube.com/embed/IUwM5d3qvUY"     
+    }, {
+        "id": 30,
+        "artist-name": "The Beach Boys",
+        "song-name":"Good Vibrations",
+        "views":500,
+        "src": "https://www.youtube.com/embed/Eab_beh07HU"
+    }, {
+        "id": 31,
+        "artist-name": "The Beatles",
+        "song-name":"Come Together",
+        "views":4000009,
+        "src": "https://www.youtube.com/embed/45cYwDMibGo"
+    }, {
+        "id": 32,
+        "artist-name": "Beirut",
+        "song-name":"Elephant Gun",
+        "views":7960,
+        "src": "https://www.youtube.com/embed/SWSz_PAfgNc" 
+    }, {
+        "id": 33,
+        "artist-name": "Billie Eilish",
+        "song-name":"Bad Guy",
+        "views":674539,
+        "src": "https://www.youtube.com/embed/DyDfgMOUjCI"
+    }, {
+        "id": 34,
+        "artist-name": "Black Eyed Peas",
+        "song-name":"Shut Up",
+        "views":8000,
+        "src": "https://www.youtube.com/embed/KRzMtlZjXpU"
+    }, {
+        "id": 35,
+        "artist-name": "Boney M.",
+        "song-name":"Daddy Cool",
+        "views":6540,
+        "src":"https://www.youtube.com/embed/QtxlCsVKkvY" 
+    }, {
+        "id": 36,
+        "artist-name": "Chet Faker",
+        "song-name":"Gold",
+        "views":98101,
+        "src": "https://www.youtube.com/embed/hi4pzKvuEQM"
+    }, {
+        "id": 37,
+        "artist-name": "Choir Of Young Believers",
+        "song-name":"Hollow Talk",
+        "views":20292765,
+        "src": "https://www.youtube.com/embed/sepnIuRbYF4"
+    }, {
+        "id": 38,
+        "artist-name": "The Clash",
+        "song-name":"Should I Stay Or Should I Go",
+        "views":10000,
+        "src": "https://www.youtube.com/embed/BN1WwnEDWAM"
+    }, {
+        "id": 39,
+        "artist-name": "David Bowie",
+        "song-name":"Starman",
+        "views":49863908,
+        "src": "https://www.youtube.com/embed/tRcPA7Fzebw"
+    }, {
+        "id": 40,
+        "artist-name": "Eminem",
+        "song-name":"Rap God",
+        "views":10984600,
+        "src": "https://www.youtube.com/embed/XbGs_qK2PQA"
+    }, {
+        "id": 41,
+        "artist-name": "Assaf Amdursky",
+        "song-name":"Hu Heemin La",
+        "views":1476600,
+        "src": "https://www.youtube.com/embed/o4j-rahDivg"
+        }
 ]
