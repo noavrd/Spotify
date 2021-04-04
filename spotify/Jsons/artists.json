@@ -1,0 +1,35 @@
+[
+    {
+        "id":201,
+        "name": "Eminem",
+        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/eminem.PNG",
+        "albums-list": ["The Eminem Show", "Kamikaze"],
+        "selected-songs": ["Lose yourself"]
+    },
+    {
+        "id":202,
+        "name": "Ariana Grange",
+        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/ariana.jpg",
+        "albums-list": ["thank u, next"],
+        "selected-songs": ["Break up with your girlfriend, i'm board"]
+    },{
+        "id":203,
+        "name": "Beyonce",
+        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/beyonce.jpg",
+        "albums-list": ["Lemonade", "Dangerously In Love"],
+        "selected-songs": ["Sorry", "Crazy in love"]
+    },{
+        "id":204,
+        "name": "Milky Chance",
+        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/milkychance.jpg",
+        "albums-list": ["Blossom"],
+        "selected-songs": ["Cocoon"]
+    },{
+        "id":205,
+        "name": "Drake",
+        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/drake.jpg",
+        "albums-list": ["Nothing Was The Same "],
+        "selected-songs": ["Hold on, we`re going home"]
+    }
+
+]
