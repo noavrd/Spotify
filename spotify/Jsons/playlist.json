@@ -1,0 +1,117 @@
+[
+    {
+        "id": 101,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 102,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 103,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 104,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 105,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 106,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 107,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 108,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 109,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 110,
+        "name": "Today`s hits",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/todayhits.png",
+        "created_at":"04-04-2021",
+        "songs-list": ["Fever"]
+    }, {
+        "id": 111,
+        "name": "Party",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/party.jpg",
+        "created_at":"03-01-2021",
+        "songs-list": ["Crazy in love"]
+    }, {
+        "id": 112,
+        "name": "00's Essentials",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/00s.PNG",
+        "created_at":"15-12-2020",
+        "songs-list": ["Let`s get it started"]
+    }, {
+        "id": 113,
+        "name": "RAP LIFE",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/raplife.PNG",
+        "created_at":"",
+        "songs-list": ["Bitch, don`t kill my vibe", "No Role Modelz"]
+    }, {
+        "id": 114,
+        "name": "British Rock",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/britishRock.PNG",
+        "created_at":"25-02-2021",
+        "songs-list": ["Mardy bum"]
+    }, {
+        "id": 115,
+        "name": "Chill Rap",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/chillrap.PNG",
+        "created_at":"14-03-2021",
+        "songs-list": ["Sacrifices"]
+    }, {
+        "id": 116,
+        "name": "Chill Vibes",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/chillvibe.PNG",
+        "created_at":"03-05-2020",
+        "songs-list": ["Cocoon", "Dang!"]
+    }, {
+        "id": 117,
+        "name": "Quiet storm",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/quiet.PNG",
+        "created_at":"13-01-2021",
+        "songs-list": ["Pretty little fears"]
+    }, {
+        "id": 118,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, {
+        "id": 119,
+        "name": "Training",
+        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "created_at":"",
+        "songs-list": ["Break up with your girlfriend, i'm board"]
+    }, 
+]
