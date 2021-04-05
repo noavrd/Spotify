@@ -1,7 +1,4 @@
 import { React, useEffect, useState } from "react";
-// import Album from "./Album";
-// import Artist from "./Artist";
-// import Playlist from "./Playlist";
 import albumsData from "../Jsons/albums.json";
 import songsData from "../Jsons/songs.json";
 import playlistsData from "../Jsons/playlist.json";
@@ -9,11 +6,15 @@ import artistsData from "../Jsons/artists.json";
 
 function Main() {
   const [topSongs, setTopSongs] = useState([]);
-  const [topAlbums, setTopAlbums] = useState([])
+  const [topAlbums, setTopAlbums] = useState([]);
+  const [topPlaylist, setTopPlaylist] = useState([]);
   useEffect(() => {
     setTopSongs(songsData.sort((a,b) => ( b.views- a.views )).slice(0, 5));
-    setTopAlbums(albumsData.slice(0,5))
+    setTopAlbums(albumsData.slice(0,5));
+    setTopPlaylist(playlistsData.slice(0,5));
   },[])
+  console.log(topAlbums)
+  console.log(topPlaylist)
 
   return (
     <div>
@@ -24,7 +25,7 @@ function Main() {
      </ul>
      <h3>Top 5 playlists</h3>
      <ul>
-       {/* <Playlist/> */}
+       <ShowPlaylist songs={topPlaylist}/>
      </ul>
      <h3>Top 5 albums</h3>
      <ul>
@@ -38,13 +39,10 @@ function Main() {
   );
 }
 function ShowSongs({songs}) {
-  // console.log(songs)
   const [items, setItems] = useState([]);
   useEffect(() => {
     setItems(songs);
   },[songs]);
-
-  console.log(items)
 
   return items.map((song) => (
       <li key={song.id}>{song.songName} </li> 
@@ -52,20 +50,32 @@ function ShowSongs({songs}) {
 }
 
 function ShowAlbums({albums}) {
-  // console.log(songs)
   const [items, setItems] = useState([]);
   useEffect(() => {
     setItems(albums);
   },[albums]);
 
-  console.log(items)
-
   return items.map((album) => (
     <div key={album.id}>
       <li>{album.artistName}</li> 
-      {console.log(`../Jsons${album.cover_img}`)}
       <img src={`..${album.cover_img}`} alt={album.albumName} />
+    </div>
+  ))
+}
 
+function ShowPlaylist({playlists}) {
+  const [items, setItems] = useState([]);
+  useEffect(() => {
+    setItems(playlists);
+  },[playlists]);
+
+  console.log(playlists);
+
+  // return <div></div>
+  return items.map((single) => (
+    <div key={single.id}>
+      <li>{single.artistName}</li> 
+      <img src={`..${single.cover_img}`} alt={single.albumName} />
     </div>
   ))
 }

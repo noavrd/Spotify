@@ -16,7 +16,6 @@ function Album(props) {
        <h1>Album</h1>
      <div>{exists.albumName}</div>
      <div>{exists.artistName}</div>
-     {console.log(songsList)}
      <ol>
         {songsList.map((song, i)=>{
         return <li key={i}>{song}</li>
