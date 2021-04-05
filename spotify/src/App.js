@@ -5,13 +5,15 @@ import Main from "./Components/Main"
 import Playlist from "./Components/Playlist";
 import Song from "./Components/Song";
 import NotFound from "./Components/NotFound";
+import './App.css';
+
 function App() {
   return (
     <div>
       <BrowserRouter>
       <header>
         <h1>
-          Spotify
+          MUSICATION
         </h1>
       </header>
       <Switch>

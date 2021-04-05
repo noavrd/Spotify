@@ -13,7 +13,6 @@ function Playlist(props) {
   },[]);
   return (
     <div>
-       <h1>Playlist</h1>
      <div>{exists.name}</div>
      <div>{exists.created_at}</div>
      {console.log(songsList)}

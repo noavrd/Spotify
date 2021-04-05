@@ -15,7 +15,6 @@ function Artist(props) {
   }, []);
   return (
     <div>
-      <h1>Artist</h1>
       <div>{exists.name}</div>
       <ol>
         {selectedSongs.map((song, i) => {

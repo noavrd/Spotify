@@ -10,14 +10,18 @@ function Song(props) {
     console.log(mySong)
   },[]);
   return (
-    <div>
-       <h1>Song</h1>
-     <div> views: {exists.views}</div>
-     <div>{exists.artistName}</div>
-     <div>{exists.length}</div>
-     <div>{exists.songName}</div>
-     <div>{exists.lyrics}</div>
-     <iframe width="560" height="315" src={exists.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    <div className="song">
+      <div className="songInfo">
+        <div className="title">{exists.artistName}</div>
+        <div className="together songName">{exists.songName} - </div>
+        <div className="together">  {exists.length}</div><br/>
+        <iframe  src={exists.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div> views: {exists.views}</div>
+      </div>
+      <div className="lyrics">
+        <div className="title">Lyrics</div><br/>
+        <div >{exists.lyrics}</div>
+      </div>
     </div>
   );
 }

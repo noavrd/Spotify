@@ -27,21 +27,20 @@ function Main() {
 
   return (
     <div>
-      <h1>home</h1>
       <h3>Top 5 songs</h3>
-      <ul>
+      <ul className="topSongs">
         <ShowSongs songs={topSongs} />
       </ul>
       <h3>Top 5 playlists</h3>
-      <ul>
+      <ul className="playlists">
         <ShowPlayLists playlists={topPlayLists} />
       </ul>
       <h3>Top 5 albums</h3>
-      <ul>
+      <ul className="albums">
         <ShowAlbums albums={topAlbums} />
       </ul>
       <h3>Top 5 artists</h3>
-      <ul>
+      <ul className="artists">
         <ShowArtists artists={topArtists} />
       </ul>
     </div>
@@ -54,7 +53,7 @@ function ShowSongs({songs}) {
   },[songs]);
 
   return items.map((song) => (
-      <li key={song.id}>{song.songName} </li> 
+      <li className="songLi" key={song.id}>{song.songName} </li> 
   ))
 }
 function ShowAlbums({ albums }) {
@@ -65,14 +64,14 @@ function ShowAlbums({ albums }) {
   }, [albums]);
 
   return items.map((album) => (
-    <div key={album.id}>
-      <li>{album.artistName}</li>
-      <li>{album.albumName}</li>
+    <div className="mainDiv" key={album.id}>
       <img
-        style={{ width: "100px" }}
-        src={`..${album.cover_img}`}
-        alt={album.albumName}
+      src={`..${album.cover_img}`}
+      alt={album.albumName}
       />
+      <li className="mainLi">{album.artistName}</li>
+      <li className="mainLi">{album.albumName}</li>
+    
     </div>
   ));
 }
@@ -83,14 +82,13 @@ function ShowArtists({ artists }) {
     setItems(artists);
   }, [artists]);
   return items.map((artist) => (
-    <div key={artist.id}>
-      <li>{artist.name}</li>
+    <div className="mainDiv" key={artist.id}>
       <img
-        style={{ width: "100px" }}
         src={`..${artist.cover_img}`}
         alt={artist.name}
       />
-      <li>{artist.selectedSong}</li>
+      <li className="mainLi">{artist.name}</li>
+      <li className="mainLi">{artist.selectedSong}</li>
     </div>
   ));
 }
@@ -100,15 +98,14 @@ function ShowPlayLists({ playlists }) {
     setItems(playlists);
   }, [playlists]);
   return items.map((playlist) => (
-    <div key={playlist.id}>
-      <li>{playlist.name}</li>
+    <div className="mainDiv" key={playlist.id}>
       <img
-        style={{ width: "100px" }}
         src={`..${playlist.cover_img}`}
         alt={playlist.name}
       />
-      <li>{playlist.created_at}</li>
-      <li>{playlist.songsList}</li>
+      <li className="mainLi">{playlist.name}</li>
+      <li className="mainLi">{playlist.created_at}</li>
+      <li className="mainLi">{playlist.songsList}</li>
     </div>
   ));
 }

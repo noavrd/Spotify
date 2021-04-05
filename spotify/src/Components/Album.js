@@ -1,3 +1,5 @@
+import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
+import NotFound from "./NotFound"
 import { useEffect, useState } from "react";
 import albumsData from "../Jsons/albums.json";
 
@@ -11,9 +13,23 @@ function Album(props) {
     console.log(myAlbum)
     setSongList(myAlbum.songsList)
   },[]);
+  if(exists === undefined) {
+    return(
+      <div>
+        <BrowserRouter>
+        <Switch>
+          <Route component={NotFound} />
+          </Switch>
+          </BrowserRouter>
+      </div>
+    // console.log(2)
+    
+    )
+
+
+  }
   return (
     <div>
-       <h1>Album</h1>
      <div>{exists.albumName}</div>
      <div>{exists.artistName}</div>
      <ol>
