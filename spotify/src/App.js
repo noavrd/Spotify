@@ -16,10 +16,10 @@ function App() {
       </header>
       <Switch>
         <Route exact path="/" component={Main}/>
-        <Route exact path="/song" component={Song} />
-        <Route exact path="/artist" component={Artist} />
-        <Route exact path="/album" component={Album} />
-        <Route exact path="/playlist" component={Playlist} />
+        <Route exact path="/song/:id" component={Song} />
+        <Route exact path="/artist/:id" component={Artist} />
+        <Route exact path="/album/:id" component={Album} />
+        <Route exact path="/playlist/:id" component={Playlist} />
         <Route component={NotFound} />
       </Switch>
       </BrowserRouter>
