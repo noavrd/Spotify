@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
-import albumsData from "../Jsons/albums.json";
+import playlistData from "../Jsons/playlist.json";
 
 function Playlist(props) {
   const [exists, setExists] = useState(true);
   const [songsList, setSongList] = useState([]);
 
   useEffect(()=> {
-    const myAlbum = albumsData.find((item)=> item.id === Number(props.match.params.id));
-    setExists(myAlbum);
-    console.log(myAlbum)
-    setSongList(myAlbum.songsList)
+    const myPlaylist = playlistData.find((item)=> item.id === Number(props.match.params.id));
+    setExists(myPlaylist);
+    console.log(myPlaylist)
+    setSongList(myPlaylist.songsList)
   },[]);
   return (
     <div>
-       <h1>Album</h1>
-     <div>{exists.albumName}</div>
-     <div>{exists.artistName}</div>
+       <h1>Playlist</h1>
+     <div>{exists.name}</div>
+     <div>{exists.created_at}</div>
      {console.log(songsList)}
-     <ol>
+     <ol> songs:
         {songsList.map((song, i)=>{
         return <li key={i}>{song}</li>
         })}
