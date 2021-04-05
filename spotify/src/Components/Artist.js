@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 function Artist(props) {
   const [exists, setExists] = useState(true);
   const [selectedSongs, setSelectedSongs]= useState([])
+  const [albums, setAlbums]= useState([])
+
 
   useEffect(() => {
     const myArtist = artistsData.find(
@@ -11,12 +13,20 @@ function Artist(props) {
     );
     setExists(myArtist);
     console.log(myArtist);
-    setSelectedSongs(myArtist.selectedSongs)
+    setSelectedSongs(myArtist.selectedSongs);
+    setAlbums(myArtist.albumsList);
   }, []);
   return (
     <div>
       <div>{exists.name}</div>
       <ol>
+        <h2>Albums</h2>
+        {albums.map((album, i) => {
+          return <li key={i}>{album}</li>;
+        })}
+      </ol>
+      <ol>
+      <h2>Selected songs</h2>
         {selectedSongs.map((song, i) => {
           return <li key={i}>{song}</li>;
         })}
