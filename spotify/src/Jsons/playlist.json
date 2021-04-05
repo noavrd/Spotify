@@ -1,103 +1,103 @@
 [
     {"id": 101,
         "name": "Training",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/training.jpg",
+        "cover_img": "/pictures/training.jpg",
         "created_at": "5-11-2011",
         "songsList": ["Blue"]
     }, {
         "id": 102,
         "name": "My Shazam Tracks",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/shazam.jpeg",
+        "cover_img": "/pictures/shazam.jpeg",
         "created_at": "9-4-2015",
         "songsList": ["Taro"]
     }, {
         "id": 103,
         "name": "classics",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/classic.jpeg",
+        "cover_img": "/pictures/classic.jpeg",
         "created_at": "4-12-1997",
         "songsList": ["Daddy Cool"]
     }, {
         "id": 104,
         "name": "sad mood",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/sadmode.jpeg",
+        "cover_img": "/pictures/sadmode.jpeg",
         "created_at": "3-3-2013",
         "songsList": ["Back To Black"]
     }, {
         "id": 105,
         "name": "driving",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/drive.jpeg",
+        "cover_img": "/pictures/drive.jpeg",
         "created_at": "30-3-2020",
         "songsList": ["Location"]
     }, {
         "id": 106,
         "name": "motivation",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/motivation.jpeg",
+        "cover_img": "/pictures/motivation.jpeg",
         "created_at": "1-8-2021",
         "songsList": ["Good Vibrations"]
     }, {
         "id": 107,
         "name": "Isreali Songs",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/israeli.jpeg",
+        "cover_img": "/pictures/israeli.jpeg",
         "created_at": "20-4-2006",
         "songsList": ["Hu Heemin La"]
     }, {
         "id": 108,
         "name": "Happy mood",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/happy.jpeg",
+        "cover_img": "/pictures/happy.jpeg",
         "created_at": "5-5-2005",
         "songsList": ["I Trusted You"]
     }, {
         "id": 109,
         "name": "broken heart",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/brokenheart.jpeg",
+        "cover_img": "/pictures/brokenheart.jpeg",
         "created_at": "06-05-2020",
         "songsList": ["Someone Like You"]
     }, {
         "id": 110,
         "name": "Today's hits",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/todayhits.png",
+        "cover_img": "/pictures/todayhits.png",
         "created_at":"04-04-2021",
         "songsList": ["Fever"]
     }, {
         "id": 111,
         "name": "Party",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/party.jpg",
+        "cover_img": "/pictures/party.jpg",
         "created_at":"03-01-2021",
         "songsList": ["Crazy in love"]
     }, {
         "id": 112,
         "name": "00's Essentials",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/00s.PNG",
+        "cover_img": "/pictures/00s.PNG",
         "created_at":"15-12-2020",
         "songsList": ["Let's get it started"]
     }, {
         "id": 113,
         "name": "RAP LIFE",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/raplife.PNG",
+        "cover_img": "/pictures/raplife.PNG",
         "created_at":"",
         "songsList": ["Bitch, don't kill my vibe", "No Role Modelz"]
     }, {
         "id": 114,
         "name": "British Rock",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/britishRock.PNG",
+        "cover_img": "/pictures/britishRock.PNG",
         "created_at":"25-02-2021",
         "songsList": ["Mardy bum"]
     }, {
         "id": 115,
         "name": "Chill Rap",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/chillrap.PNG",
+        "cover_img": "/pictures/chillrap.PNG",
         "created_at":"14-03-2021",
         "songsList": ["Sacrifices"]
     }, {
         "id": 116,
         "name": "Chill Vibes",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/chillvibe.PNG",
+        "cover_img": "/pictures/chillvibe.PNG",
         "created_at":"03-05-2020",
         "songsList": ["Cocoon", "Dang!"]
     }, {
         "id": 117,
         "name": "Quiet storm",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/quiet.PNG",
+        "cover_img": "/pictures/quiet.PNG",
         "created_at":"13-01-2021",
         "songsList": ["Pretty little fears"]
     }

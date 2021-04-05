@@ -3,43 +3,43 @@
         "id": 301,
         "artistName": "Eminem",
         "albumName": "Curtain Call: The Hits",
-        "cover_img": "Jsons/pictures/curtiancalls.PNG",
+        "cover_img": "/pictures/curtiancalls.PNG",
         "songsList": ["Lose yourself"]
     }, {
         "id": 302,
         "artistName": "Eminem",
         "albumName": "The Marshall Mathers LP2",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/marshell2.PNG",
+        "cover_img": "/pictures/marshell2.PNG",
         "songsList": ["Rap God"]
     }, {
         "id": 303,
         "artistName": "Ariana Grange",
         "albumName": "thank u, next",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/thanku.PNG",
+        "cover_img": "/pictures/thanku.PNG",
         "songsList": ["Break up with your girlfriend, i'm board"]
     }, {
         "id": 304,
         "artistName": "Beyonce",
         "albumName": "Dangerously In Love",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/dangerously.PNG",
+        "cover_img": "/pictures/dangerously.PNG",
         "songsList": ["Crazy in love"]
     }, {
         "id": 305,
         "artistName": "Beyonce",
         "albumName": "Lemonade",
-        "cover_img": "spotify/src/Jsons/pictures/lemonade.PNG",
+        "cover_img": "/pictures/lemonade.PNG",
         "songsList": ["Sorry"]
     }, {
         "id": 306,
         "artistName": "Milky Chance",
         "albumName": "Blossom",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/blossom.PNG",
+        "cover_img": "/pictures/blossom.PNG",
         "songsList": ["Cocoon"]
     }, {
         "id": 307,
         "artistName": "Drake",
         "albumName": "Nothing Was The Same",
-        "cover_img": "C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/nothingwasthesame.PNG",
+        "cover_img": "/pictures/nothingwasthesame.PNG",
         "songsList": ["Hold on, we`re going home"]
     }
 ]

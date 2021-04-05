@@ -2,31 +2,31 @@
     {
         "id":201,
         "name": "Eminem",
-        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/eminem.PNG",
+        "cover_img":"/pictures/eminem.PNG",
         "albumsList": ["Curtain Call: The Hits", "The Marshall Mathers LP2"],
         "selectedSongs": ["Lose yourself", "Rap God"]
     }, {
         "id":202,
         "name": "Ariana Grange",
-        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/ariana.jpg",
+        "cover_img":"/pictures/ariana.jpg",
         "albumsList": ["thank u, next"],
         "selectedSongs": ["Break up with your girlfriend, i'm board"]
     }, {
         "id":203,
         "name": "Beyonce",
-        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/beyonce.jpg",
+        "cover_img":"/pictures/beyonce.jpg",
         "albumsList": ["Lemonade", "Dangerously In Love"],
         "selectedSongs": ["Sorry", "Crazy in love"]
     }, {
         "id":204,
         "name": "Milky Chance",
-        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/milkychance.jpg",
+        "cover_img":"/pictures/milkychance.jpg",
         "albumsList": ["Blossom"],
         "selectedSongs": ["Cocoon"]
     }, {
         "id":205,
         "name": "Drake",
-        "cover_img":"C:/Users/noavr/Documents/GitHub/noa/Spotify/spotify/Jsons/pictures/drake.jpg",
+        "cover_img":"/pictures/drake.jpg",
         "albumsList": ["Nothing Was The Same"],
         "selectedSongs": ["Hold on, we`re going home"]
     }

@@ -63,9 +63,8 @@ function ShowAlbums({albums}) {
   return items.map((album) => (
     <div key={album.id}>
       <li>{album.artistName}</li> 
-      {console.log(JSON.stringify(album.cover_img))}
-      <img src={JSON.stringify(album.cover_img)} alt={album.albumName} />
-      <img src={(album.cover_img)} alt={album.albumName} />
+      {console.log(`../Jsons${album.cover_img}`)}
+      <img src={`..${album.cover_img}`} alt={album.albumName} />
 
     </div>
   ))
