@@ -12,10 +12,17 @@ function Main() {
 
   useEffect(() => {
     setTopSongs(songsData.sort((a, b) => b.views - a.views).slice(0, 5));
-    setTopAlbums(albumsData.slice(0, 5));
-    setTopArtists(artistsData.slice(0, 5));
-    setTopPlayLists(playlistsData.slice(0, 5));
+
+    let shuffled = playlistsData.sort(() => 0.5 - Math.random());
+    setTopPlayLists(shuffled.slice(0, 5));
+
+    shuffled = albumsData.sort(() => 0.5 - Math.random());
+    setTopAlbums(shuffled.slice(0, 5));
+
+    shuffled = artistsData.sort(() => 0.5 - Math.random());
+    setTopArtists(shuffled.slice(0, 5));
   }, []);
+
 
 
   return (

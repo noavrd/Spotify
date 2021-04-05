@@ -22,7 +22,7 @@ function Artist(props) {
           return <li key={i}>{song}</li>;
         })}
       </ol>
-      <img src={`..${exists.cover_img}`} alt={exists.name}></img>
+      <img src={`..${exists.cover_img}`} alt={exists.name} style={{ width: "100px" }}></img>
     </div>
   );
 }
