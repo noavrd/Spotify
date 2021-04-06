@@ -1,5 +1,7 @@
 import { React, useEffect, useState } from "react";
 import albumsData from "../Jsons/albums.json";
+import {Link} from "react-router-dom";
+
 import songsData from "../Jsons/songs.json";
 import playlistsData from "../Jsons/playlist.json";
 import artistsData from "../Jsons/artists.json";
@@ -51,9 +53,14 @@ function ShowSongs({songs}) {
   useEffect(() => {
     setItems(songs);
   },[songs]);
-
   return items.map((song) => (
-      <li className="songLi" key={song.id}>{song.songName} </li> 
+      <Link
+      to={{
+      pathname: `/song/${song.id}`,
+      }}
+      >
+        <li key={song.id}>{song.songName}</li>
+      </Link>
   ))
 }
 function ShowAlbums({ albums }) {
@@ -64,15 +71,20 @@ function ShowAlbums({ albums }) {
   }, [albums]);
 
   return items.map((album) => (
-    <div className="mainDiv" key={album.id}>
-      <img
-      src={`..${album.cover_img}`}
-      alt={album.albumName}
-      />
-      <li className="mainLi">{album.artistName}</li>
-      <li className="mainLi">{album.albumName}</li>
-    
-    </div>
+    <Link
+    to={{
+    pathname: `/album/${album.id}`,
+    }}
+    >
+      <div className="mainDiv" key={album.id}>
+        <img
+        src={`..${album.cover_img}`}
+        alt={album.albumName}
+        />
+        <li className="mainLi">{album.artistName}</li>
+        <li className="mainLi">{album.albumName}</li>
+      </div>
+    </Link>
   ));
 }
 
@@ -82,14 +94,20 @@ function ShowArtists({ artists }) {
     setItems(artists);
   }, [artists]);
   return items.map((artist) => (
-    <div className="mainDiv" key={artist.id}>
-      <img
-        src={`..${artist.cover_img}`}
-        alt={artist.name}
-      />
-      <li className="mainLi">{artist.name}</li>
-      <li className="mainLi">{artist.selectedSong}</li>
-    </div>
+    <Link
+    to={{
+    pathname: `/artist/${artist.id}`,
+    }}
+    >
+      <div className="mainDiv" key={artist.id}>
+        <img
+          src={`..${artist.cover_img}`}
+          alt={artist.name}
+        />
+        <li className="mainLi">{artist.name}</li>
+        <li className="mainLi">{artist.selectedSong}</li>
+      </div>
+    </Link>
   ));
 }
 function ShowPlayLists({ playlists }) {
@@ -98,15 +116,21 @@ function ShowPlayLists({ playlists }) {
     setItems(playlists);
   }, [playlists]);
   return items.map((playlist) => (
-    <div className="mainDiv" key={playlist.id}>
-      <img
-        src={`..${playlist.cover_img}`}
-        alt={playlist.name}
-      />
-      <li className="mainLi">{playlist.name}</li>
-      <li className="mainLi">{playlist.created_at}</li>
-      <li className="mainLi">{playlist.songsList}</li>
-    </div>
+    <Link
+    to={{
+    pathname: `/playlist/${playlist.id}`,
+    }}
+    >
+      <div className="mainDiv" key={playlist.id}>
+        <img
+          src={`..${playlist.cover_img}`}
+          alt={playlist.name}
+        />
+        <li className="mainLi">{playlist.name}</li>
+        <li className="mainLi">{playlist.created_at}</li>
+        <li className="mainLi">{playlist.songsList}</li>
+      </div>
+    </Link>
   ));
 }
 export default Main;
