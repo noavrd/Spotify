@@ -28,7 +28,12 @@ function Artist(props) {
           const myAlbum = albumsData.find((item) => item.albumName === album);
           console.log(myAlbum);
           return (
-            <Link to={`/album/${myAlbum.id}?artist=${exists.id}`}>
+            <Link
+              to={{
+                pathname: `/album/${myAlbum.id}`,
+                search: `?artist=${exists.id}`
+              }}
+              >
               <li key={i}>{album}</li>
             </Link>
           );
@@ -40,7 +45,12 @@ function Artist(props) {
           const mySong = songsData.find((item) => item.songName === song);
           console.log(mySong);
           return (
-            <Link to={`/song/${mySong.id}?artist=${exists.id}`}>
+            <Link
+              to={{
+                pathname: `/song/${mySong.id}`,
+                search: `?artist=${exists.id}`
+              }}
+              >
               <li key={i}>{song}</li>
             </Link>
           );

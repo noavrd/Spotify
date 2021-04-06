@@ -25,7 +25,12 @@ function Album(props) {
           const mySong = songsData.find((item) => item.songName === song);
           console.log(mySong);
           return (
-            <Link to={`/song/${mySong.id}?album=${exists.id}`}>
+            <Link
+              to={{
+                pathname: `/song/${mySong.id}`,
+                search: `?album=${exists.id}`
+              }}
+              >
               <li key={i}>{song}</li>
             </Link>
           );
