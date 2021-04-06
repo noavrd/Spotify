@@ -28,7 +28,7 @@ function Album(props) {
       <div>{exists.artistName}</div>
       <ol>
           <h2>songs</h2>
-          {songsList.map((song, i) => {
+          {songsList.map((song) => {
             const mySong = songsData.find((item) => item.songName === song);
             console.log(mySong);
             return (
@@ -38,7 +38,7 @@ function Album(props) {
                   search: `?album=${exists.id}`
                 }}
                 >
-                <li key={i}>{song}</li>
+                <li key={mySong.id}>{song}</li>
               </Link>
             );
           })}

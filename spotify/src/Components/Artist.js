@@ -33,7 +33,7 @@ function Artist(props) {
         <div>{exists.name}</div>
         <ol>
           <h2>Albums</h2>
-          {albums.map((album, i) => {
+          {albums.map((album) => {
             const myAlbum = albumsData.find((item) => item.albumName === album);
             console.log(myAlbum);
             return (
@@ -43,14 +43,14 @@ function Artist(props) {
                   search: `?artist=${exists.id}`
                 }}
                 >
-                <li key={i}>{album}</li>
+                <li key={myAlbum.id}>{album}</li>
               </Link>
             );
           })}
         </ol>
         <ol>
           <h2>songs</h2>
-          {selectedSongs.map((song, i) => {
+          {selectedSongs.map((song) => {
             const mySong = songsData.find((item) => item.songName === song);
             console.log(mySong);
             return (
@@ -60,7 +60,7 @@ function Artist(props) {
                   search: `?artist=${exists.id}`
                 }}
                 >
-                <li key={i}>{song}</li>
+                <li key={mySong.id}>{song}</li>
               </Link>
             );
           })}

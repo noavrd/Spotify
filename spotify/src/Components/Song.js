@@ -36,7 +36,7 @@ function Song(props) {
   if(exists === false) {
     return (
       <SendToNotFound />
-      )
+    )
     } else {
       return (
         <div className="song">
@@ -54,16 +54,20 @@ function Song(props) {
         <div className="suggested">
           <ol>
           <h2>suggestedSongs</h2>
+
+          
           {suggestedSongs.map((song, i) => {
-            const mySong = songsData.find((item) => item.songName === song);
-            console.log(mySong);
+            const otherSong = songsData.find((item) => item.songName === song);
             return (
+              /////////////////////////
+              //problem - switch url but not the page himself without refresh
+              //the problem is with the key
               <Link
               to={{
-                pathname: `/song/${mySong.id}`,
+                pathname: `/song/${otherSong.id}`,
               }}
               >
-                <li key={i}>{song}</li>
+                <li key={otherSong.id}>{song}</li>
               </Link>
             );
           })}
