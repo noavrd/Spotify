@@ -1,12 +1,11 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
-    /* background-color: black; */
     color:#ede3e3;
 
 }
 body {
-    background-image: url("./7971.jpg");
-    background-repeat:repeat-x
+    background-image: url("./3.jpg");
+    background-size: cover;
 }
 h1 {
     font-family: 'Train One', cursive;
@@ -15,6 +14,10 @@ h1 {
     background-image: none;
     background-color: #e2e2e2;
     color: black;
+}
+.eachTopSong {
+    padding-left: 2vw;
+    text-decoration: none;
 }
 ul {
     display: inline-flex;
@@ -36,24 +39,41 @@ h3 {
 .songLi {
     padding-left: 2vw;
 }
+.artist {
+    text-align: center;
+}
 
-img {
-    /* box-shadow: 0 2px 4px white, 0 2px 4px rgba(0, 0, 0, 0.23); */
+.mainPicture{
     transition: 0.5s;
-    border-radius: 15px;
-    background-color: white;
     width: 8vw;
     height: 17vh;
     border-radius: 50%;
 }
 
-img:hover {
-    box-shadow: 0 6px 6px whitesmoke, 0 6px 6px whitesmoke;
+.mainPicture:hover {
+    box-shadow: 0 6px 6px black, 0 6px 6px whitesmoke;
+    width: 8.5vw;
+    height: 18vh;
+    
+}
+.album {
+    text-align: center;
+}
+.playlist {
+    text-align: center;
+}
+
+.subTitle {
+    font-size: 3vh;
+
 }
 .songInfo {
     padding-left: 5vw;
     position:fixed;
 
+}
+li {
+    list-style:none;
 }
 
 .together {
@@ -61,10 +81,17 @@ img:hover {
     font-size: 3vh;
 
 }
-.lyrics {
+.lyricsAndSuggestion {
     margin-left: 32vw;
     padding: 0 15vw;
-    padding-right: 3vw;
+    padding-right: 6vw;
+
+}
+
+.onlyLyrics {
+    margin-left: 25vw;
+    padding: 0 19vw;
+    padding-right: 2vw;
 }
 
 .title {
@@ -74,4 +101,42 @@ img:hover {
 iframe {
     width: 37vw;
     height: 50vh;
+}
+
+.song {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.show {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    padding-right: 4vw;
+}
+
+.notShow {
+    visibility: hidden;
 }

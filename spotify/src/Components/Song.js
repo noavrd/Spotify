@@ -10,6 +10,11 @@ import {useLocation} from 'react-router-dom'
 function Song(props) {
   const [exists, setExists] = useState(false);
   const [suggestedSongs, setSuggestedSongs] = useState([]);
+
+  //to use class name in case you need to show suggestion songs
+  const [showSuggestedSongs, setShowSuggestedSongs] = useState("notShow");
+  const [showOnlyLyrics, setShowOnlyLyrics] = useState("onlyLyrics");
+
   const queryParams = useQuery();
   useEffect(()=> {
     const mySong = songsData.find((item)=> item.id === Number(props.match.params.id));
@@ -23,10 +28,20 @@ function Song(props) {
         //match suggested songs by album/artist/playlist
         if( queryParams.album) {
           setSuggestedSongs(myAlbum.songsList)
+          setShowSuggestedSongs("show");
+          setShowOnlyLyrics("lyricsAndSuggestion");
+          
         } else if (queryParams.artist) {
           setSuggestedSongs(myArtist.selectedSongs)
+          setShowSuggestedSongs("show");
+          setShowOnlyLyrics("lyricsAndSuggestion");
+
         } else {
           setSuggestedSongs(myPlaylist.songsList)
+          setShowSuggestedSongs("show");
+          setShowOnlyLyrics("lyricsAndSuggestion");
+
+
         }
       }
     }
@@ -47,32 +62,32 @@ function Song(props) {
           <iframe  src={exists.src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           <div> views: {exists.views}</div>
         </div>
-        <div className="lyrics">
+        <div className={showOnlyLyrics}>
           <div className="title">Lyrics</div><br/>
           <div >{exists.lyrics}</div>
         </div>
-        <div className="suggested">
-          <ol>
-          <h2>suggestedSongs</h2>
+          <div className={showSuggestedSongs}>
+            <ol>
+            <div className="title">suggestedSongs</div><br/>
 
-          
-          {suggestedSongs.map((song, i) => {
-            const otherSong = songsData.find((item) => item.songName === song);
-            return (
-              /////////////////////////
-              //problem - switch url but not the page himself without refresh
-              //the problem is with the key
-              <Link
-              to={{
-                pathname: `/song/${otherSong.id}`,
-              }}
-              >
-                <li key={otherSong.id}>{song}</li>
-              </Link>
-            );
-          })}
-        </ol>
-        </div>
+            
+            {suggestedSongs.map((song) => {
+              const otherSong = songsData.find((item) => item.songName === song);
+              return (
+                /////////////////////////
+                //problem - switch url but not the page himself without refresh
+                //the problem is with the key
+                <Link
+                to={{
+                  pathname: `/song/${otherSong.id}`,
+                }}
+                >
+                  <li key={otherSong.id}>{song}</li>
+                </Link>
+              );
+            })}
+          </ol>
+          </div>
       </div>
     );
     

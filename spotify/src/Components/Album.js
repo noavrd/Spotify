@@ -23,11 +23,11 @@ function Album(props) {
     )
   } else {
     return (
+      <div className="album">
+      <img src={`..${exists.cover_img}`} className="albumPicture" alt={exists.albumName} style={{ width: "100px" }}></img>
+      <div className="title">{exists.artistName}</div>
+      <div className="subTitle">{exists.albumName}</div><br/>
       <div>
-      <div>{exists.albumName}</div>
-      <div>{exists.artistName}</div>
-      <ol>
-          <h2>songs</h2>
           {songsList.map((song) => {
             const mySong = songsData.find((item) => item.songName === song);
             console.log(mySong);
@@ -38,13 +38,12 @@ function Album(props) {
                   search: `?album=${exists.id}`
                 }}
                 >
-                <li key={mySong.id}>{song}</li>
+                <div key={mySong.id} className="albumList">{song}</div>
               </Link>
             );
           })}
-        </ol>
+        </div>
 
-      <img src={`..${exists.cover_img}`} alt={exists.albumName} style={{ width: "100px" }}></img>
       </div>
     );
   }

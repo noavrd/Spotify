@@ -26,13 +26,14 @@ function Artist(props) {
   if (exists === false) {
     return (
       <SendToNotFound />
-    )
-  } else {
-    return (
-      <div>
-        <div>{exists.name}</div>
-        <ol>
-          <h2>Albums</h2>
+      )
+    } else {
+      return (
+        <div className="artist">
+        <img src={`..${exists.cover_img}`} alt={exists.name} style={{ width: "100px" }}></img>
+        <div className="title">{exists.name}</div><br/>
+        <div>
+          <div className="subTitle">Albums</div>
           {albums.map((album) => {
             const myAlbum = albumsData.find((item) => item.albumName === album);
             console.log(myAlbum);
@@ -43,13 +44,13 @@ function Artist(props) {
                   search: `?artist=${exists.id}`
                 }}
                 >
-                <li key={myAlbum.id}>{album}</li>
+                <div key={myAlbum.id}>{album}</div>
               </Link>
             );
           })}
-        </ol>
-        <ol>
-          <h2>songs</h2>
+        </div>
+        <div><br/>
+          <div className="subTitle">songs</div>
           {selectedSongs.map((song) => {
             const mySong = songsData.find((item) => item.songName === song);
             console.log(mySong);
@@ -60,12 +61,11 @@ function Artist(props) {
                   search: `?artist=${exists.id}`
                 }}
                 >
-                <li key={mySong.id}>{song}</li>
+                <div key={mySong.id}>{song}</div>
               </Link>
             );
           })}
-        </ol>
-        <img src={`..${exists.cover_img}`} alt={exists.name} style={{ width: "100px" }}></img>
+        </div>
       </div>
     );
   }

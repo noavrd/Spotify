@@ -59,7 +59,7 @@ function ShowSongs({songs}) {
       pathname: `/song/${song.id}`,
       }}
       >
-        <li key={song.id}>{song.songName}</li>
+        <li key={song.id} className="eachTopSong">{song.songName}</li>
       </Link>
   ))
 }
@@ -80,6 +80,7 @@ function ShowAlbums({ albums }) {
         <img
         src={`..${album.cover_img}`}
         alt={album.albumName}
+        className="mainPicture"
         />
         <li className="mainLi">{album.artistName}</li>
         <li className="mainLi">{album.albumName}</li>
@@ -103,6 +104,7 @@ function ShowArtists({ artists }) {
         <img
           src={`..${artist.cover_img}`}
           alt={artist.name}
+          className="mainPicture"
         />
         <li className="mainLi">{artist.name}</li>
         <li className="mainLi">{artist.selectedSong}</li>
@@ -125,10 +127,10 @@ function ShowPlayLists({ playlists }) {
         <img
           src={`..${playlist.cover_img}`}
           alt={playlist.name}
+          className="mainPicture"
         />
         <li className="mainLi">{playlist.name}</li>
         <li className="mainLi">{playlist.created_at}</li>
-        <li className="mainLi">{playlist.songsList}</li>
       </div>
     </Link>
   ));
