@@ -1,13 +1,18 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: black;
+    /* background-color: black; */
     color:#ede3e3;
 
+}
+body {
+    background-image: url("./7971.jpg");
+    background-repeat:repeat-x
 }
 h1 {
     font-family: 'Train One', cursive;
     font-size: 10vh;
     text-align: center;
+    background-image: none;
     background-color: #e2e2e2;
     color: black;
 }
