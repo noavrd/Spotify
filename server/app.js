@@ -40,4 +40,30 @@ app.get('/artists', (req, res) => {
   );
 });
 
+//GET 5 TOP ARTISTS
+app.get('/albums', (req, res) => {
+    mysqlCon.query(
+      'SELECT * FROM album ORDER BY RAND() LIMIT 5 ',
+      (err, results, fields) => {
+        if (err) {
+          res.send(err.message);
+        }
+        res.send(results);
+    }
+    );
+});
+
+//GET 5 TOP ARTISTS
+app.get('/playlists', (req, res) => {
+    mysqlCon.query(
+      'SELECT * FROM playlist ORDER BY RAND() LIMIT 5 ',
+      (err, results, fields) => {
+        if (err) {
+          res.send(err.message);
+        }
+        res.send(results);
+      }
+    );
+  });
+
 app.listen(3000)
