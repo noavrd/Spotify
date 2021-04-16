@@ -40,7 +40,7 @@ app.get('/artists', (req, res) => {
   );
 });
 
-//GET 5 TOP ARTISTS
+//GET 5 TOP ALBUMS
 app.get('/albums', (req, res) => {
     mysqlCon.query(
       'SELECT * FROM album ORDER BY RAND() LIMIT 5 ',
@@ -53,7 +53,7 @@ app.get('/albums', (req, res) => {
     );
 });
 
-//GET 5 TOP ARTISTS
+//GET 5 TOP PLAYLISTS
 app.get('/playlists', (req, res) => {
     mysqlCon.query(
       'SELECT * FROM playlist ORDER BY RAND() LIMIT 5 ',
@@ -66,6 +66,7 @@ app.get('/playlists', (req, res) => {
     );
 });
 
+//GET SONG BY ID
 app.get('/song/:id', (req, res) => {
     mysqlCon.query('SELECT * FROM song WHERE id = ' + req.params.id, (err, results, fields) => {
         if (err) {
@@ -76,4 +77,36 @@ app.get('/song/:id', (req, res) => {
     })
 })
 
+//GET ARTIST BY ID
+app.get('/artist/:id', (req, res) => {
+    mysqlCon.query('SELECT * FROM artists WHERE id = ' + req.params.id, (err, results, fields) => {
+        if (err) {
+            res.send(err.message);
+        } else if (results && results.length === 1) {
+            res.send(results[0]);
+        }
+    })
+})
+
+//GET PLAYLIST BY ID
+app.get('/playlist/:id', (req, res) => {
+    mysqlCon.query('SELECT * FROM playlist WHERE id = ' + req.params.id, (err, results, fields) => {
+        if (err) {
+            res.send(err.message);
+        } else if (results && results.length === 1) {
+            res.send(results[0]);
+        }
+    })
+})
+
+//GET ALBUM BY ID
+app.get('/album/:id', (req, res) => {
+    mysqlCon.query('SELECT * FROM album WHERE id = ' + req.params.id, (err, results, fields) => {
+        if (err) {
+            res.send(err.message);
+        } else if (results && results.length === 1) {
+            res.send(results[0]);
+        }
+    })
+})
 app.listen(3000)
