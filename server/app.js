@@ -110,6 +110,7 @@ app.get('/album/:id', (req, res) => {
     })
 })
 
+//POST - ADD SONG 
 app.post('/song', (req, res) => {
     let body = req.body;
     if (body.id && body.songName && body.artistName && body.album && body.length && body.views && body.src && body.lyrics) {
@@ -126,6 +127,7 @@ app.post('/song', (req, res) => {
     }
 })
 
+//POST- ADD ARTIST
 app.post('/artist', (req, res) => {
     let body = req.body;
     if (body.id && body.name && body.cover_img && body.albumsList && body.selectedSongs) {
@@ -141,4 +143,46 @@ app.post('/artist', (req, res) => {
         res.send("You missed a value")
     }
 })
+
+//POST- ADD PLAYLIST
+app.post('/playlist', (req, res) => {
+    let body = req.body;
+    console.log(`${body.id}, "${body.name}", "${body.cover_img}", "${body.created_at}", "${body.songsList}`)
+    if (
+      body.id && body.name && body.cover_img && body.created_at && body.songsList) {
+      mysqlCon.query(
+        `INSERT INTO playlist VALUES (${body.id}, "${body.name}", "${body.cover_img}", "${body.created_at}", "${body.songsList}")`,
+        (err, results, fields) => {
+          if (err) {
+            res.send(err.message);
+          } else {
+            res.send('Add successfully');
+          }
+        }
+      );
+    } else {
+      res.send('You missed a value');
+    }
+});
+
+//POST- ADD ALBUM
+app.post('/album', (req, res) => {
+    let body = req.body;
+    console.log(`${body.id}, "${body.artistName}", "${body.albumName}", "${body.cover_img}", "${body.songsList}"`)
+    if (body.id && body.artistName && body.albumName && body.cover_img &&body.songsList) {
+      mysqlCon.query(
+        `INSERT INTO album VALUES (${body.id}, "${body.artistName}", "${body.albumName}", "${body.cover_img}", "${body.songsList}")`,
+        (err, results, fields) => {
+          if (err) {
+            res.send(err.message);
+          } else {
+            res.send('Add successfully');
+          }
+        }
+      );
+    } else {
+      res.send('You missed a value');
+    }
+  });
+  
 app.listen(3000)
