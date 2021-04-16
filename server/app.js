@@ -62,8 +62,18 @@ app.get('/playlists', (req, res) => {
           res.send(err.message);
         }
         res.send(results);
-      }
+    }
     );
-  });
+});
+
+app.get('/song/:id', (req, res) => {
+    mysqlCon.query('SELECT * FROM song WHERE id = ' + req.params.id, (err, results, fields) => {
+        if (err) {
+            res.send(err.message);
+        } else if (results && results.length === 1) {
+            res.send(results[0]);
+        }
+    })
+})
 
 app.listen(3000)
