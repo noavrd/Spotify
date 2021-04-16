@@ -125,4 +125,20 @@ app.post('/song', (req, res) => {
         res.send("You missed a value")
     }
 })
+
+app.post('/artist', (req, res) => {
+    let body = req.body;
+    if (body.id && body.name && body.cover_img && body.albumsList && body.selectedSongs) {
+
+        mysqlCon.query(`INSERT INTO artists VALUES (${body.id}, "${body.name}", "${body.cover_img}", "${body.albumsList}", "${body.selectedSongs}")`, (err, results, fields) => {
+            if (err) {
+                res.send(err.message)
+            } else {
+                res.send("Add successfully")
+            }
+        })
+    } else {
+        res.send("You missed a value")
+    }
+})
 app.listen(3000)
