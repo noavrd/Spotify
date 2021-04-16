@@ -147,7 +147,6 @@ app.post('/artist', (req, res) => {
 //POST- ADD PLAYLIST
 app.post('/playlist', (req, res) => {
     let body = req.body;
-    console.log(`${body.id}, "${body.name}", "${body.cover_img}", "${body.created_at}", "${body.songsList}`)
     if (
       body.id && body.name && body.cover_img && body.created_at && body.songsList) {
       mysqlCon.query(
@@ -183,6 +182,16 @@ app.post('/album', (req, res) => {
     } else {
       res.send('You missed a value');
     }
-  });
-  
+});
+
+//UPDATE SONG
+app.put('/song', (req, res) => {
+    mysqlCon.query('UPDATE song SET songName = ?, artistName = ?, album = ?, length = ?, views = ?, src = ?, lyrics = ? WHERE id = ?', [req.body.songName, req.body.artistName, req.body.album, req.body.length, req.body.views, req.body.src,req.body.lyrics, req.body.id], (err, results, fields) => {
+        if(err){
+            res.send(err.message);
+        } else {
+            res.send("Updated successfully");
+        }
+    });
+}); 
 app.listen(3000)
