@@ -1,10 +1,6 @@
 import { React, useEffect, useState } from "react";
-import albumsData from "../Jsons/albums.json";
 import {Link} from "react-router-dom";
-
-import songsData from "../Jsons/songs.json";
-import playlistsData from "../Jsons/playlist.json";
-import artistsData from "../Jsons/artists.json";
+import axios from "axios";
 
 function Main() {
   const [topSongs, setTopSongs] = useState([]);
@@ -13,16 +9,34 @@ function Main() {
   const [topPlayLists, setTopPlayLists] = useState([]);
 
   useEffect(() => {
-    setTopSongs(songsData.sort((a, b) => b.views - a.views).slice(0, 5));
+    axios.get(`http://localhost:3000/songs`)
+    .then((response) => {
+      setTopSongs(response.data);
+    }).catch((err) => {
+      console.log(err)
+    })
+    
 
-    let shuffled = playlistsData.sort(() => 0.5 - Math.random());
-    setTopPlayLists(shuffled.slice(0, 5));
+    axios.get(`http://localhost:3000/playlists`)
+    .then((response) => {
+      setTopPlayLists(response.data);
+    }).catch((err) => {
+      console.log(err)
+    })
 
-    shuffled = albumsData.sort(() => 0.5 - Math.random());
-    setTopAlbums(shuffled.slice(0, 5));
+    axios.get(`http://localhost:3000/albums`)
+    .then((response) => {
+      setTopAlbums(response.data);
+    }).catch((err) => {
+      console.log(err)
+    })
 
-    shuffled = artistsData.sort(() => 0.5 - Math.random());
-    setTopArtists(shuffled.slice(0, 5));
+    axios.get(`http://localhost:3000/artists`)
+    .then((response) => {
+      setTopArtists(response.data);
+    }).catch((err) => {
+      console.log(err)
+    })
   }, []);
 
 
