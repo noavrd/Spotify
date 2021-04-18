@@ -72,44 +72,61 @@ app.get('/playlists', (req, res) => {
 
 //GET SONG BY ID
 app.get('/song/:id', (req, res) => {
+  let exists = false;
     mysqlCon.query('SELECT * FROM song WHERE id = ' + req.params.id, (err, results, fields) => {
         if (err) {
             res.send(err.message);
         } else if (results && results.length === 1) {
-            res.send(results[0]);
+          exists = true;
+          console.log(exists)  
+          res.send(results[0]);
+        } else if (exists === false) {
+          res.send("Song not found")
         }
     })
 })
 
 //GET ARTIST BY ID
 app.get('/artist/:id', (req, res) => {
+  let exists = false;
     mysqlCon.query('SELECT * FROM artists WHERE id = ' + req.params.id, (err, results, fields) => {
         if (err) {
             res.send(err.message);
         } else if (results && results.length === 1) {
+            exists = true;
             res.send(results[0]);
+        } else if (exists === false) {
+          res.send("Artist not found")
         }
-    })
+    }) 
 })
 
 //GET PLAYLIST BY ID
 app.get('/playlist/:id', (req, res) => {
+  let exists = false;
     mysqlCon.query('SELECT * FROM playlist WHERE id = ' + req.params.id, (err, results, fields) => {
         if (err) {
             res.send(err.message);
         } else if (results && results.length === 1) {
+            exists = true;
             res.send(results[0]);
+        } else if (exists === false) {
+          res.send("Playlist not found")
         }
     })
 })
 
 //GET ALBUM BY ID
 app.get('/album/:id', (req, res) => {
+  let exists = false;
     mysqlCon.query('SELECT * FROM album WHERE id = ' + req.params.id, (err, results, fields) => {
         if (err) {
             res.send(err.message);
         } else if (results && results.length === 1) {
+            exists = true;
             res.send(results[0]);
+        } else if (exists === false) {
+          res.send("Album not found")
         }
     })
 })
