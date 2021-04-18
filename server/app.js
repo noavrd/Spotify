@@ -197,34 +197,42 @@ app.put('/song', (req, res) => {
 
 //UPDATE ALBUM
 app.put('/album', (req, res) => {
-  mysqlCon.query('UPDATE album SET artistName = ?, albumName = ?, cover_img = ?, songsList = ?, WHERE id = ?', [req.body.artistName, req.body.albumName, req.body.cover_img, req.body.songsList, req.body.id], (err, results, fields) => {
-      if(err){
-          res.send(err.message);
+  mysqlCon.query(
+    'UPDATE album SET artistName = ?, albumName = ?, cover_img = ?, songsList = ? WHERE id = ?',[req.body.artistName, req.body.albumName, req.body.cover_img, req.body.songsList, req.body.id], (err, results, fields) => {
+      if (err) {
+        res.send(err.message);
       } else {
-          res.send("Updated successfully");
+        res.send('Updated successfully');
       }
-  });
-}); 
+    }
+  );
+});
 
 //UPDATE ARTIST
 app.put('/artist', (req, res) => {
-  mysqlCon.query('UPDATE artists SET name = ?, cover_img = ?, albumsList = ?, selectedSongs = ?, WHERE id = ?', [req.body.name, req.body.cover_img, req.body.albumsList, req.body.selectedSongs, req.body.id], (err, results, fields) => {
-      if(err){
-          res.send(err.message);
+  mysqlCon.query(
+    'UPDATE artists SET name = ?, cover_img = ?, albumsList = ?, selectedSongs = ? WHERE id = ?',[req.body.name, req.body.cover_img, req.body.albumsList, req.body.selectedSongs,req.body.id],
+    (err, results, fields) => {
+      if (err) {
+        res.send(err.message);
       } else {
-          res.send("Updated successfully");
+        res.send('Updated successfully');
       }
-  });
-}); 
+    }
+  );
+});
 
 //UPDATE PLAYLIST
 app.put('/playlist', (req, res) => {
-  mysqlCon.query('UPDATE playlist SET name = ?, cover_img = ?, created_at = ?, songsList = ?, WHERE id = ?', [req.body.name, req.body.cover_img, req.body.created_at, req.body.songsList, req.body.id], (err, results, fields) => {
-      if(err){
-          res.send(err.message);
+  mysqlCon.query(
+    'UPDATE playlist SET name = ?, cover_img = ?,created_at = ?, songsList = ? WHERE id = ?',
+    [req.body.name, req.body.cover_img, req.body.created_at, req.body.songsList, req.body.id], (err, results, fields) => {
+      if (err) {
+        res.send(err.message);
       } else {
-          res.send("Updated successfully");
+        res.send('Updated successfully');
       }
-  });
-}); 
+    }
+  );
+});
 app.listen(3000)
