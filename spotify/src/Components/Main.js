@@ -144,6 +144,7 @@ function ShowPlayLists({ playlists }) {
           className="mainPicture"
         />
         <li className="mainLi">{playlist.name}</li>
+        {console.log(playlist.created_at)}
         <li className="mainLi">{playlist.created_at}</li>
       </div>
     </Link>
