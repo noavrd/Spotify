@@ -235,4 +235,57 @@ app.put('/playlist', (req, res) => {
     }
   );
 });
+
+//DELETE SONG
+app.delete('/song/:id', (req, res) => {
+  mysqlCon.query('DELETE FROM song WHERE id = ?',[req.params.id], (err, results, fields) => {
+      console.log(fields);
+      if (err) {
+        res.send(err.message);
+      } else {
+        res.send("Deleted successfully");
+      }
+    }
+  );
+});
+
+//DELETE ARTIST
+app.delete('/artist/:id', (req, res) => {
+  mysqlCon.query('DELETE FROM artists WHERE id = ?',[req.params.id], (err, results, fields) => {
+      console.log(fields);
+      if (err) {
+        res.send(err.message);
+      } else {
+        res.send("Deleted successfully");
+      }
+    }
+  );
+});
+
+//DELETE ALBUM
+app.delete('/album/:id', (req, res) => {
+  mysqlCon.query('DELETE FROM album WHERE id = ?',[req.params.id], (err, results, fields) => {
+      console.log(fields);
+      if (err) {
+        res.send(err.message);
+      } else {
+        res.send("Deleted successfully");
+      }
+    }
+  );
+});
+
+//DELETE PLAYLIST
+app.delete('/playlist/:id', (req, res) => {
+  mysqlCon.query('DELETE FROM playlist WHERE id = ?',[req.params.id], (err, results, fields) => {
+      console.log(fields);
+      if (err) {
+        res.send(err.message);
+      } else {
+        res.send("Deleted successfully");
+      }
+    }
+  );
+});
+
 app.listen(3000)
